@@ -9,7 +9,7 @@ const PasswordReset = () => {
 	const [msg, setMsg] = useState("");
 	const [error, setError] = useState("");
 	const param = useParams();
-	const url = `https://url-shortner-server-n8nj.onrender.com/api/password-reset/${param.id}/${param.token}`;
+	const url = `http://url-shortner-server-n8nj.onrender.com/api/password-reset/${param.id}/${param.token}`;
 
 	useEffect(() => {
 		const verifyUrl = async () => {

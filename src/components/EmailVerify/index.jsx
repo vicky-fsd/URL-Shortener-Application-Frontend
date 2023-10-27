@@ -13,7 +13,7 @@ const EmailVerify = () => {
   useEffect(() => {
     const verifyEmailUrl = async () => {
       try {
-        const url = `https://url-shortner-server-n8nj.onrender.com/api/users/${param.id}/verify/${param.token}`;
+        const url = `http://url-shortner-server-n8nj.onrender.com/api/users/${param.id}/verify/${param.token}`;
         const { data } = await axios.get(url);
         console.log(data);
         setValidUrl(true);

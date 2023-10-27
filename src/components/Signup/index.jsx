@@ -20,7 +20,7 @@ const Signup = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "https://url-shortner-server-n8nj.onrender.com/api/users";
+			const url = "http://url-shortner-server-n8nj.onrender.com/api/users";
 			const { data: res } = await axios.post(url, data);
 			setMsg(res.message);
 		} catch (error) {

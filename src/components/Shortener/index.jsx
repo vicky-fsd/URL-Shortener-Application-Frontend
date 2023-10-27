@@ -14,7 +14,7 @@ const Shortener = () => {
 
 
   // Define BASE_URL here
-  const BASE_URL = 'https://url-shortner-server-n8nj.onrender.com';
+  const BASE_URL = 'http://url-shortner-server-n8nj.onrender.com';
 
   const isValidURL = (str) => {
     try {
@@ -34,7 +34,7 @@ const Shortener = () => {
     const data = { originalUrl: longURL,userId };
 
     axios
-      .post(`https://url-shortner-server-n8nj.onrender.com/shorten`, data)
+      .post(`http://url-shortner-server-n8nj.onrender.com/shorten`, data)
       .then((response) => {
         console.log('Response from backend:', response);
 
