@@ -12,7 +12,7 @@ const Dashboard = () => {
     const userId=localStorage.getItem("userId");
 
     // Fetch data from the API and update the statsData state
-    const BASE_URL = 'http://url-shortner-server-n8nj.onrender.com'; // Adjust the base URL
+    const BASE_URL = 'https://url-shortner-server-n8nj.onrender.com'; // Adjust the base URL
     axios
       .get(`${BASE_URL}/api/data/${userId}`)
       .then((response) => {

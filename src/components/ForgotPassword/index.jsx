@@ -10,7 +10,7 @@ const ForgotPassword = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = `http://url-shortner-server-n8nj.onrender.com/api/password-reset`;
+			const url = `https://url-shortner-server-n8nj.onrender.com/api/password-reset`;
 			const { data } = await axios.post(url, { email });
 			setMsg(data.message);
 			setError("");
